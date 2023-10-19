@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dicdpl722ij7q"]
+
+[ext_resource type="Script" path="res://game/scenes/main/deck.gd" id="1_nxu25"]
+
+[node name="Deck" type="Node2D"]
+script = ExtResource("1_nxu25")
+
+[node name="spr_deck" type="Sprite2D" parent="."]

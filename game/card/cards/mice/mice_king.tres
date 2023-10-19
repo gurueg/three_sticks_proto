@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=4 format=3 uid="uid://dldcmmse3na5s"]
+
+[ext_resource type="Script" path="res://game/card/card_data.gd" id="1_gd0s2"]
+[ext_resource type="Resource" uid="uid://bh31anhc8ha83" path="res://game/card/races/mice.tres" id="1_ifn46"]
+[ext_resource type="Texture2D" uid="uid://dsvslb63nsawn" path="res://assets/sprites/cards/mice/EX1_IMG.png" id="3_qo46t"]
+
+[resource]
+script = ExtResource("1_gd0s2")
+name = "King"
+value = 11
+race = ExtResource("1_ifn46")
+texture = ExtResource("3_qo46t")

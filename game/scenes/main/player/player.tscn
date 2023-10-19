@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6h8buo12tfvs"]
+
+[ext_resource type="Script" path="res://game/scenes/main/player/player.gd" id="1_0v83x"]
+[ext_resource type="PackedScene" uid="uid://b16wj4j0kdnet" path="res://game/scenes/main/player/hand.tscn" id="2_usdbl"]
+[ext_resource type="PackedScene" uid="uid://bwhqvdml856g2" path="res://game/scenes/main/player/sticks.tscn" id="3_ewdax"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_0v83x")
+
+[node name="Sticks" parent="." instance=ExtResource("3_ewdax")]
+position = Vector2(161, -50)
+
+[node name="Hand" parent="." instance=ExtResource("2_usdbl")]

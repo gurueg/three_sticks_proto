@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://b16wj4j0kdnet"]
+
+[ext_resource type="Script" path="res://game/scenes/main/player/hand.gd" id="1_ifisb"]
+[ext_resource type="PackedScene" uid="uid://dak40r3bgstf2" path="res://game/utilities/h_box_container_2d.tscn" id="2_y3mam"]
+[ext_resource type="PackedScene" uid="uid://dninw81pe2w8t" path="res://game/card/card.tscn" id="3_53u3e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rhu1n"]
+size = Vector2(66, 98)
+
+[node name="Hand" type="Node2D"]
+script = ExtResource("1_ifisb")
+
+[node name="Container" parent="." instance=ExtResource("2_y3mam")]
+position = Vector2(-7, 0)
+cellsize = 68.0
+max_width = 400.0
+
+[node name="Placeholder" type="Node2D" parent="."]
+position = Vector2(7, 0)
+
+[node name="card_draggable" parent="." instance=ExtResource("3_53u3e")]
+visible = false
+
+[node name="card_area" type="Area2D" parent="card_draggable"]
+
+[node name="card_shape" type="CollisionShape2D" parent="card_draggable/card_area"]
+position = Vector2(34, 50)
+shape = SubResource("RectangleShape2D_rhu1n")
+
+[connection signal="area_entered" from="card_draggable/card_area" to="." method="_on_card_area_entered"]
+[connection signal="area_exited" from="card_draggable/card_area" to="." method="_on_card_area_exited"]

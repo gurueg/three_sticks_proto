@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwhqvdml856g2"]
+
+[ext_resource type="Script" path="res://game/scenes/main/player/sticks.gd" id="1_0fkft"]
+[ext_resource type="Texture2D" uid="uid://b0mum8wpg5kay" path="res://assets/sprites/Skull.png" id="2_s4tvk"]
+
+[node name="Sticks" type="Node2D"]
+script = ExtResource("1_0fkft")
+
+[node name="Stick1" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(26.5, 0)
+scale = Vector2(4, 3.71)
+texture = ExtResource("2_s4tvk")
+
+[node name="Stick2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(89.5, 0)
+scale = Vector2(4, 3.71)
+texture = ExtResource("2_s4tvk")
+
+[node name="Stick3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(150.5, 0)
+scale = Vector2(4, 3.71)
+texture = ExtResource("2_s4tvk")

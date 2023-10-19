@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dak40r3bgstf2"]
+
+[ext_resource type="Script" path="res://game/utilities/h_box_contaner_2d.gd" id="1_ohffb"]
+
+[node name="HBoxContainer2D" type="Node2D"]
+script = ExtResource("1_ohffb")
+cellsize = 60.0
+
+[connection signal="child_entered_tree" from="." to="." method="_on_child_entered_tree"]
+[connection signal="child_exiting_tree" from="." to="." method="_on_child_exiting_tree"]

@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="RaceData" load_steps=2 format=3 uid="uid://cmcm5wsy8u38b"]
+
+[ext_resource type="Script" path="res://game/card/race_data.gd" id="1_2716k"]
+
+[resource]
+script = ExtResource("1_2716k")
+name = "Parrot"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=4 format=3 uid="uid://dt10c0h8dah0i"]
+
+[ext_resource type="Resource" uid="uid://bh31anhc8ha83" path="res://game/card/races/mice.tres" id="1_c3445"]
+[ext_resource type="Script" path="res://game/card/card_data.gd" id="1_ohsqy"]
+[ext_resource type="Texture2D" uid="uid://cefr08ri3yfsn" path="res://assets/sprites/cards/mice/EX3_IMG.png" id="3_b5o2o"]
+
+[resource]
+script = ExtResource("1_ohsqy")
+name = "Healer"
+value = -10
+race = ExtResource("1_c3445")
+texture = ExtResource("3_b5o2o")
